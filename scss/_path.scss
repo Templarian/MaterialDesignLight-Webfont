@@ -1,0 +1,11 @@
+@font-face {
+  font-family: '#{$mdil-font-name}';
+  src: url('#{$mdil-font-path}/#{$mdil-filename}-webfont.eot?v=#{$mdil-version}');
+  src: url('#{$mdil-font-path}/#{$mdil-filename}-webfont.eot?#iefix&v=#{$mdil-version}') format('embedded-opentype'),
+    url('#{$mdil-font-path}/#{$mdil-filename}-webfont.woff2?v=#{$mdil-version}') format('woff2'),
+    url('#{$mdil-font-path}/#{$mdil-filename}-webfont.woff?v=#{$mdil-version}') format('woff'),
+    url('#{$mdil-font-path}/#{$mdil-filename}-webfont.ttf?v=#{$mdil-version}') format('truetype'),
+    url('#{$mdil-font-path}/#{$mdil-filename}-webfont.svg?v=#{$mdil-version}##{$mdil-filename}#{$mdil-font-weight}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

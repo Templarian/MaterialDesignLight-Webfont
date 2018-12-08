@@ -1,0 +1,356 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Material Design Icons Light</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #222;
+        }
+
+        h1, h2, h3, p, div, footer {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        h1 {
+            padding: 20px 20px 16px 20px;
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: normal;
+            color: #FFF;
+            background-color: #2196F3;
+        }
+
+        h1 svg {
+            vertical-align: middle;
+            width: 26px;
+            height: 26px;
+            margin: 0 6px 4px 0;
+        }
+
+        h1 svg path {
+            fill: #FFF;
+        }
+
+        h1 .version {
+            font-size: 14px;
+            background: #FFF;
+            padding: 4px 10px;
+            float: right;
+            border-radius: 2px;
+            margin: -3px 0 0 0;
+            color: #666;
+            font-weight: bold;
+        }
+
+        h1 .version::before {
+            content: 'v';
+        }
+
+        h1 code {
+            font-size: 20px;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 12px;
+            border-radius: 3px;
+            float: right;
+            margin: -3px 10px 0 0;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        h1 code:hover {
+            border: 1px solid #FFF;
+        }
+
+        h1 code svg {
+            width: 24px;
+            height: 24px;
+            margin: -1px -4px 0 -2px
+        }
+
+        h2 {
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        h3 {
+            font-size: 14px;
+            padding: 10px 20px 0 20px;
+            font-weight: bold;
+        }
+
+        p {
+            padding: 10px 20px;
+        }
+
+        p code {
+            display: inline-block;
+            vertical-align: middle;
+            background: #F1F1F1;
+            padding: 3px 5px;
+            border-radius: 3px;
+            border: 1px solid #DDD;
+        }
+
+        p i.mdi {
+            vertical-align: middle;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        p i.mdi.dark-demo {
+            background: #333;
+        }
+
+        p.note {
+            color: #999;
+            font-size: 14px;
+            padding: 0 20px 5px 20px;
+        }
+
+        .icons {
+            padding: 0 20px 10px 20px;
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .icons div {
+            line-height: 2em;
+        }
+
+        .icons div span {
+            cursor: pointer;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            display: inline-block;
+            max-width: calc(100% - 90px);
+            overflow: hidden;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .icons div code:hover,
+        .icons div span:hover,
+        .icons div i:hover {
+            color: #3c90be;
+        }
+
+        .icons div code:hover {
+            border-color: #3c90be;
+        }
+
+        .icons div code {
+            border: 1px solid #DDD;
+            width: 46px;
+            margin-left: 2px;
+            margin-right: 4px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 24px;
+            cursor: pointer;
+        }
+
+        .icons div i {
+            display: inline-block;
+            width: 32px;
+            height: 24px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            line-height: 24px;
+        }
+
+        .icons .mdil:before {
+            font-size: 24px;
+        }
+
+        pre {
+            margin: 0 20px;
+            font-family: Consolas, monospace;
+            padding: 10px;
+            border: 1px solid #DDD;
+            background: #F1F1F1;
+        }
+
+        div.copied {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            width: 200px;
+            text-align: center;
+            color: #3c763d;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-left: -100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #DDD;
+            background: #F1F1F1;
+        }
+
+        footer a {
+            color: #e91e63;
+            text-decoration: none;
+        }
+    </style>
+    <link href="css/materialdesignicons-light.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        <svg>
+            <path d="M0,0H8V3H18V0H26V8H23V18H26V26H18V23H8V21H18V18H21V8H18V5H8V8H5V18H8V26H0V18H3V8H0V0M2,2V6H6V2H2M2,20V24H6V20H2M20,2V6H24V2H20M20,20V24H24V20H20Z"></path>
+        </svg>
+        Material Design Icons Light
+        <span class="version">0.2.63</span>
+        <code id="npm" title="Copy to Clipboard">
+            <svg viewBox="0 0 24 24">
+                <path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z" />
+            </svg>
+            npm install @mdi/light-font
+        </code>
+    </h1>
+
+    <h2>Usage</h2>
+    <pre><code>&lt;span class=&quot;mdil mdil-<span id="name">name</span>&quot;&gt;&lt;/span&gt;</code></pre>
+
+    <h2>Icons <small>(click to copy to clipboard)</small></h2>
+    <div class="icons" id="icons"></div>
+
+    <h2>Extras</h2>
+
+    <p>The helper CSS classes are listed below.</p>
+
+    <h3>Size</h3>
+
+    <p>
+        <code>mdi-18px</code> <i class="mdi mdi-18px mdi-account"></i>
+        <code>mdi-24px</code> <i class="mdi mdi-24px mdi-account"></i>
+        <code>mdi-36px</code> <i class="mdi mdi-36px mdi-account"></i>
+        <code>mdi-48px</code> <i class="mdi mdi-48px mdi-account"></i>
+    </p>
+
+    <h3>Rotate</h3>
+
+    <p>
+        <i class="mdi mdi-48px mdi-account"></i>
+        <code>mdi-rotate-45</code> <i class="mdi mdi-48px mdi-rotate-45 mdi-account"></i>
+        <code>mdi-rotate-90</code> <i class="mdi mdi-48px mdi-rotate-90 mdi-account"></i>
+        <code>mdi-rotate-135</code> <i class="mdi mdi-48px mdi-rotate-135 mdi-account"></i>
+        <code>mdi-rotate-180</code> <i class="mdi mdi-48px mdi-rotate-180 mdi-account"></i>
+        <code>mdi-rotate-225</code> <i class="mdi mdi-48px mdi-rotate-225 mdi-account"></i>
+        <code>mdi-rotate-270</code> <i class="mdi mdi-48px mdi-rotate-270 mdi-account"></i>
+        <code>mdi-rotate-315</code> <i class="mdi mdi-48px mdi-rotate-315 mdi-account"></i>
+    </p>
+
+    <h3>Flip</h3>
+
+    <p>
+        <i class="mdi mdi-48px mdi-account-alert"></i>
+        <code>mdi-flip-h</code> <i class="mdi mdi-48px mdi-flip-h mdi-account-alert"></i>
+        <code>mdi-flip-v</code> <i class="mdi mdi-48px mdi-flip-v mdi-account-alert"></i>
+    </p>
+
+    <p class="note"><strong>Note:</strong> We do not include the ability to use <code>mdi-flip-*</code> and <code>mdi-rotate-*</code> at the same time.</p>
+
+    <h3>Spin</h3>
+
+    <p>
+        <code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-loading"></i>
+        <code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-star"></i>
+    </p>
+
+    <h3>Color</h3>
+
+    <p style="padding-bottom:20px;">
+        <code>mdi-light</code> <i class="mdi mdi-48px mdi-light mdi-account dark-demo"></i>
+        <code>mdi-light mdi-inactive</code> <i class="mdi mdi-48px mdi-light mdi-inactive mdi-account dark-demo"></i>
+        <code>mdi-dark</code> <i class="mdi mdi-48px mdi-dark mdi-account"></i>
+        <code>mdi-dark mdi-inactive</code> <i class="mdi mdi-48px mdi-dark mdi-inactive mdi-account"></i>
+    </p>
+
+    <footer>
+        Generated with <a href="https://github.com/sapegin/grunt-webfont">grunt-webfont</a> at <a href="http://materialdesignicons.com/">MaterialDesignIcons.com</a>.
+        <a href="https://www.npmjs.com/org/mdi" target="_blank">NPM @mdi Organization</a>.
+    </footer>
+
+    <script type="text/javascript">
+        (function () {
+            var icons = [{"name":"account","hex":"f004"},{"name":"alarm","hex":"f020"},{"name":"alarm-plus","hex":"f024"},{"name":"alert","hex":"f026"},{"name":"alert-circle","hex":"f028"},{"name":"alert-octagon","hex":"f029"},{"name":"arrange-bring-forward","hex":"f03d"},{"name":"arrange-bring-to-front","hex":"f03e"},{"name":"arrange-send-backward","hex":"f03f"},{"name":"arrange-send-to-back","hex":"f040"},{"name":"arrow-down","hex":"f045"},{"name":"arrow-down-circle","hex":"fcb7"},{"name":"arrow-left","hex":"f04d"},{"name":"arrow-left-circle","hex":"fcb9"},{"name":"arrow-right","hex":"f054"},{"name":"arrow-right-circle","hex":"fcbb"},{"name":"arrow-up","hex":"f05d"},{"name":"arrow-up-circle","hex":"fcbd"},{"name":"bank","hex":"f070"},{"name":"bell","hex":"f09a"},{"name":"bell-off","hex":"f09b"},{"name":"bluetooth","hex":"f0af"},{"name":"book","hex":"f0ba"},{"name":"book-multiple","hex":"f0bb"},{"name":"book-plus","hex":"f5db"},{"name":"bookmark","hex":"f0c0"},{"name":"border-all","hex":"f0c7"},{"name":"border-bottom","hex":"f0c8"},{"name":"border-horizontal","hex":"f0ca"},{"name":"border-inside","hex":"f0cb"},{"name":"border-left","hex":"f0cc"},{"name":"border-none","hex":"f0cd"},{"name":"border-outside","hex":"f0ce"},{"name":"border-right","hex":"f0cf"},{"name":"border-top","hex":"f0d1"},{"name":"border-vertical","hex":"f0d2"},{"name":"briefcase","hex":"f0d6"},{"name":"calendar","hex":"f0ed"},{"name":"camcorder","hex":"f0fc"},{"name":"camera","hex":"f100"},{"name":"cancel","hex":"f739"},{"name":"cart","hex":"f110"},{"name":"chart-areaspline","hex":"f127"},{"name":"chart-bar","hex":"f128"},{"name":"chart-histogram","hex":"f129"},{"name":"chart-line","hex":"f12a"},{"name":"chart-pie","hex":"f12b"},{"name":"check","hex":"f12c"},{"name":"chevron-double-down","hex":"f13c"},{"name":"chevron-double-left","hex":"f13d"},{"name":"chevron-double-right","hex":"f13e"},{"name":"chevron-double-up","hex":"f13f"},{"name":"chevron-down","hex":"f140"},{"name":"chevron-left","hex":"f141"},{"name":"chevron-right","hex":"f142"},{"name":"chevron-up","hex":"f143"},{"name":"circle","hex":"f764"},{"name":"clipboard","hex":"f147"},{"name":"clipboard-check","hex":"f14c"},{"name":"clipboard-plus","hex":"f750"},{"name":"clipboard-text","hex":"f14e"},{"name":"clock","hex":"f150"},{"name":"closed-caption","hex":"f15e"},{"name":"cloud","hex":"f15f"},{"name":"cloud-download","hex":"f162"},{"name":"cloud-upload","hex":"f167"},{"name":"comment","hex":"f17a"},{"name":"comment-alert","hex":"f17d"},{"name":"comment-text","hex":"f188"},{"name":"console","hex":"f18d"},{"name":"content-cut","hex":"f190"},{"name":"content-duplicate","hex":"f191"},{"name":"content-paste","hex":"f192"},{"name":"content-save","hex":"f193"},{"name":"content-save-all","hex":"f194"},{"name":"credit-card","hex":"f19b"},{"name":"credit-card-scan","hex":"f19d"},{"name":"crop","hex":"f19e"},{"name":"crop-free","hex":"f19f"},{"name":"currency-eur","hex":"f1ad"},{"name":"currency-gbp","hex":"f1ae"},{"name":"currency-rub","hex":"f1b1"},{"name":"currency-usd","hex":"f1b3"},{"name":"delete","hex":"f1c0"},{"name":"diamond-stone","hex":"f1c8"},{"name":"dots-horizontal","hex":"f1d8"},{"name":"dots-vertical","hex":"f1d9"},{"name":"download","hex":"f1da"},{"name":"eject","hex":"f1ea"},{"name":"email","hex":"f1ee"},{"name":"email-open","hex":"f1ef"},{"name":"eye","hex":"f208"},{"name":"eye-off","hex":"f209"},{"name":"factory","hex":"f20f"},{"name":"fast-forward","hex":"f211"},{"name":"file","hex":"f214"},{"name":"file-multiple","hex":"f222"},{"name":"file-plus","hex":"f751"},{"name":"flag","hex":"f23b"},{"name":"flash","hex":"f241"},{"name":"flask","hex":"f093"},{"name":"flask-empty","hex":"f094"},{"name":"folder","hex":"f24b"},{"name":"folder-multiple","hex":"f253"},{"name":"folder-plus","hex":"f257"},{"name":"format-align-bottom","hex":"f752"},{"name":"format-align-center","hex":"f260"},{"name":"format-align-justify","hex":"f261"},{"name":"format-align-left","hex":"f262"},{"name":"format-align-middle","hex":"f753"},{"name":"format-align-right","hex":"f263"},{"name":"format-align-top","hex":"f754"},{"name":"format-bold","hex":"f264"},{"name":"format-clear","hex":"f265"},{"name":"format-float-center","hex":"f267"},{"name":"format-float-left","hex":"f268"},{"name":"format-float-none","hex":"f269"},{"name":"format-float-right","hex":"f26a"},{"name":"format-indent-decrease","hex":"f275"},{"name":"format-indent-increase","hex":"f276"},{"name":"format-italic","hex":"f277"},{"name":"format-line-spacing","hex":"f278"},{"name":"format-list-bulleted","hex":"f279"},{"name":"format-list-checks","hex":"f755"},{"name":"format-list-numbers","hex":"f27b"},{"name":"format-quote-close","hex":"f27e"},{"name":"format-quote-open","hex":"f756"},{"name":"format-underline","hex":"f287"},{"name":"format-wrap-inline","hex":"f288"},{"name":"format-wrap-square","hex":"f289"},{"name":"format-wrap-tight","hex":"f28a"},{"name":"format-wrap-top-bottom","hex":"f28b"},{"name":"forum","hex":"f28c"},{"name":"fullscreen","hex":"f293"},{"name":"fullscreen-exit","hex":"f294"},{"name":"gift","hex":"f2a1"},{"name":"grid","hex":"f2c1"},{"name":"grid-large","hex":"f757"},{"name":"grid-off","hex":"f2c2"},{"name":"group","hex":"f2c3"},{"name":"hamburger","hex":"f684"},{"name":"heart","hex":"f2d1"},{"name":"heart-half","hex":"f6de"},{"name":"heart-off","hex":"f758"},{"name":"help","hex":"f2d6"},{"name":"help-circle","hex":"f2d7"},{"name":"hexagon","hex":"f2d8"},{"name":"home","hex":"f2dc"},{"name":"image","hex":"f2e9"},{"name":"inbox","hex":"f686"},{"name":"information","hex":"f2fc"},{"name":"label","hex":"f315"},{"name":"layers","hex":"f328"},{"name":"lightbulb","hex":"f335"},{"name":"lightbulb-on","hex":"f6e7"},{"name":"link","hex":"f337"},{"name":"link-variant","hex":"f339"},{"name":"lock","hex":"f33e"},{"name":"lock-open","hex":"f33f"},{"name":"login","hex":"f342"},{"name":"logout","hex":"f343"},{"name":"magnify","hex":"f349"},{"name":"magnify-minus","hex":"f34a"},{"name":"magnify-plus","hex":"f34b"},{"name":"map-marker","hex":"f34e"},{"name":"memory","hex":"f35b"},{"name":"menu","hex":"f35c"},{"name":"message","hex":"f361"},{"name":"message-alert","hex":"f362"},{"name":"message-image","hex":"f364"},{"name":"message-processing","hex":"f366"},{"name":"message-reply","hex":"f367"},{"name":"message-text","hex":"f369"},{"name":"message-video","hex":"f36b"},{"name":"microphone","hex":"f36c"},{"name":"microphone-off","hex":"f36d"},{"name":"minus","hex":"f374"},{"name":"minus-box","hex":"f375"},{"name":"minus-circle","hex":"f376"},{"name":"monitor","hex":"f379"},{"name":"monitor-multiple","hex":"f37a"},{"name":"music","hex":"f759"},{"name":"music-off","hex":"f75a"},{"name":"nfc-variant","hex":"f398"},{"name":"note","hex":"f39a"},{"name":"note-multiple","hex":"f6b7"},{"name":"note-plus","hex":"f39c"},{"name":"note-text","hex":"f39e"},{"name":"octagon","hex":"f3c3"},{"name":"paperclip","hex":"f3e2"},{"name":"pause","hex":"f3e4"},{"name":"pencil","hex":"f3eb"},{"name":"phone","hex":"f3f2"},{"name":"pin","hex":"f403"},{"name":"pin-off","hex":"f404"},{"name":"play","hex":"f40a"},{"name":"plus","hex":"f415"},{"name":"plus-box","hex":"f416"},{"name":"plus-circle","hex":"f417"},{"name":"power","hex":"f425"},{"name":"presentation","hex":"f428"},{"name":"presentation-play","hex":"f429"},{"name":"printer","hex":"f42a"},{"name":"redo-variant","hex":"f44f"},{"name":"refresh","hex":"f450"},{"name":"repeat","hex":"f456"},{"name":"repeat-off","hex":"f457"},{"name":"repeat-once","hex":"f458"},{"name":"rewind","hex":"f45f"},{"name":"rhombus","hex":"f70a"},{"name":"rss","hex":"f46b"},{"name":"script","hex":"f478"},{"name":"settings","hex":"f493"},{"name":"shield","hex":"f498"},{"name":"shuffle","hex":"f49d"},{"name":"signal","hex":"f4a2"},{"name":"sitemap","hex":"f4aa"},{"name":"skip-next","hex":"f4ad"},{"name":"skip-previous","hex":"f4ae"},{"name":"sleep","hex":"f4b2"},{"name":"sleep-off","hex":"f4b3"},{"name":"spellcheck","hex":"f4c6"},{"name":"square","hex":"f763"},{"name":"star","hex":"f4ce"},{"name":"star-half","hex":"f4d0"},{"name":"stop","hex":"f4db"},{"name":"tab","hex":"f4e9"},{"name":"tab-plus","hex":"f75b"},{"name":"table","hex":"f4eb"},{"name":"taco","hex":"f761"},{"name":"tag","hex":"f4f9"},{"name":"television","hex":"f502"},{"name":"thumb-down","hex":"f511"},{"name":"thumb-up","hex":"f513"},{"name":"thumbs-up-down","hex":"f515"},{"name":"tooltip","hex":"f523"},{"name":"tooltip-text","hex":"f528"},{"name":"triangle","hex":"f536"},{"name":"trophy","hex":"f538"},{"name":"undo-variant","hex":"f54d"},{"name":"unfold-less-horizontal","hex":"f54e"},{"name":"unfold-less-vertical","hex":"f75f"},{"name":"unfold-more-horizontal","hex":"f54f"},{"name":"unfold-more-vertical","hex":"f760"},{"name":"ungroup","hex":"f550"},{"name":"upload","hex":"f552"},{"name":"vector-arrange-above","hex":"f554"},{"name":"vector-arrange-below","hex":"f555"},{"name":"vector-combine","hex":"f558"},{"name":"vector-difference","hex":"f55a"},{"name":"vector-difference-ab","hex":"f55b"},{"name":"vector-difference-ba","hex":"f55c"},{"name":"vector-intersection","hex":"f55d"},{"name":"vector-union","hex":"f564"},{"name":"view-dashboard","hex":"f56e"},{"name":"view-module","hex":"f573"},{"name":"volume-high","hex":"f57e"},{"name":"volume-minus","hex":"f75d"},{"name":"volume-mute","hex":"f75e"},{"name":"volume-off","hex":"f581"},{"name":"volume-plus","hex":"f75c"},{"name":"wifi","hex":"f5a9"},{"name":"xml","hex":"f5c0"}];
+            icons.push({ "name": "blank", "hex": "f68c" });
+            var copyText = function (text) {
+                var copyFrom = document.createElement('textarea');
+                copyFrom.setAttribute("style", "position:fixed;opacity:0;top:100px;left:100px;");
+                copyFrom.value = text;
+                document.body.appendChild(copyFrom);
+                copyFrom.select();
+                document.execCommand('copy');
+                var copied = document.createElement('div');
+                copied.setAttribute('class', 'copied');
+                copied.appendChild(document.createTextNode('Copied to Clipboard'));
+                document.body.appendChild(copied);
+                setTimeout(function () {
+                    document.body.removeChild(copyFrom);
+                    document.body.removeChild(copied);
+                }, 1500);
+            };
+            for (var j = 0; j < icons.length; j++) {
+                var div = document.createElement('div'),
+                    i = document.createElement('i');
+                i.className = 'mdil mdil-' + icons[j].name;
+                div.appendChild(i);
+                var code = document.createElement('code');
+                code.appendChild(document.createTextNode(icons[j].hex));
+                div.appendChild(code);
+                var span = document.createElement('span');
+                span.appendChild(document.createTextNode('mdil-' + icons[j].name));
+                div.appendChild(span);
+                span.onclick = (function (icon) {
+                    return function () {
+                        document.getElementById('name').innerHTML = icon.name;
+                    };
+                })(icons[j]);
+                i.onmouseup = (function (icon) {
+                    return function () {
+                        copyText(String.fromCharCode(parseInt(icon.hex, 16)));
+                    };
+                })(icons[j]);
+                code.onmouseup = (function (icon) {
+                    return function () {
+                        copyText(icon.hex);
+                    };
+                })(icons[j]);
+                span.onmouseup = (function (icon) {
+                    return function () {
+                        copyText('mdil-' + icon.name);
+                    };
+                })(icons[j]);
+                document.getElementById('icons').appendChild(div);
+            }
+            document.getElementById('npm').addEventListener('click', function () {
+                copyText('npm install @mdi/light-font');
+            });
+        })();
+    </script>
+
+</body>
+</html>

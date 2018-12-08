@@ -1,0 +1,10 @@
+@each $key, $value in $mdil-icons {
+    .#{$mdil-css-prefix}-#{$key}:before {
+        content: char($value);
+    }
+}
+
+.#{$mdil-css-prefix}-blank:before {
+    content: "\F68C";
+    visibility: hidden;
+}

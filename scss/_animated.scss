@@ -1,0 +1,27 @@
+// From Font Awesome
+.#{$mdil-css-prefix}-spin:before {
+    -webkit-animation: #{$mdil-css-prefix}-spin 2s infinite linear;
+            animation: #{$mdil-css-prefix}-spin 2s infinite linear;
+}
+
+@-webkit-keyframes #{$mdil-css-prefix}-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+}
+
+@keyframes #{$mdil-css-prefix}-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+}

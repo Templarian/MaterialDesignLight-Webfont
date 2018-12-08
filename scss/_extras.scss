@@ -1,0 +1,65 @@
+$mdil-sizes: 18 24 36 48;
+@each $mdil-size in $mdil-sizes {
+    .#{$mdil-css-prefix}-#{$mdil-size}px {
+        &.#{$mdil-css-prefix}-set,
+        &.#{$mdil-css-prefix}:before {
+            font-size: $mdil-size * 1px;
+        }
+    }
+}
+
+.#{$mdil-css-prefix}-dark {
+    &:before {
+        color: rgba(0, 0, 0, 0.54);
+    }
+    &.mdi-inactive:before {
+        color: rgba(0, 0, 0, 0.26);
+    }
+}
+.#{$mdil-css-prefix}-light {
+    &:before {
+        color: rgba(255, 255, 255, 1);
+    }
+    &.mdi-inactive:before {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+$mdil-degrees: 45 90 135 180 225 270 315;
+@each $mdil-degree in $mdil-degrees {
+    .#{$mdil-css-prefix}-rotate-#{$mdil-degree}{
+        &:before {
+            -webkit-transform: rotate(#{$mdil-degree}deg);
+            -ms-transform: rotate(#{$mdil-degree}deg);
+            transform: rotate(#{$mdil-degree}deg);
+        }
+        /*
+        // Not included in production
+        &.#{$mdil-css-prefix}-flip-h:before {
+            -webkit-transform: scaleX(-1) rotate(#{$mdil-degree}deg);
+            transform: scaleX(-1) rotate(#{$mdil-degree}deg);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+        &.#{$mdil-css-prefix}-flip-v:before {
+            -webkit-transform: scaleY(-1) rotate(#{$mdil-degree}deg);
+            -ms-transform: rotate(#{$mdil-degree}deg);
+            transform: scaleY(-1) rotate(#{$mdil-degree}deg);
+            filter: FlipV;
+            -ms-filter: "FlipV";
+        }
+        */
+    }
+}
+.#{$mdil-css-prefix}-flip-h:before {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.#{$mdil-css-prefix}-flip-v:before {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}

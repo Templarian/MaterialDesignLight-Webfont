@@ -1,0 +1,26 @@
+{
+  "name": "@mdi/light-font",
+  "version": "0.2.63",
+  "description": "Material Design Icons Light Webfont",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Templarian/MaterialDesignLight-Webfont.git"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "icons",
+    "webfont",
+    "font",
+    "mdi"
+  ],
+  "author": "Austin Andrews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Templarian/MaterialDesignLight-Webfont/issues"
+  },
+  "homepage": "https://github.com/Templarian/MaterialDesignLight-Webfont#readme"
+}
