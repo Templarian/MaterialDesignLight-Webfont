@@ -1,6 +1,6 @@
 > *Note:* Please use the main [MaterialDesignLight](https://github.com/Templarian/MaterialDesignLight/issues) repo to report issues. This repo is for distribution of the Webfont files only.
 
-# Webfont - Material Design Icons
+# Webfont - Material Design Icons Light
 
 Webfont distribution for [Material Design Icons Light](https://materialdesignicons.com/icons/light).
 
